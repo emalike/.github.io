@@ -1,0 +1,261 @@
+
+body{
+	height: 100%;
+	width: 100%;
+	max-width: 1400px;
+	color: #776854;
+	background-color:#FAF7F2;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 16px;
+	line-height: 2;
+}
+
+header{
+	position: relative;
+	width: 100%;
+	height: 860px;
+	height: 100%;
+	/* overflow: auto; */
+	background-color:#EA96A3 ;
+}
+
+header #logo img{
+	height: auto;
+	display: block;
+	width: 20%;
+	position: absolute;
+	left: 40%;
+  bottom: 50%;	
+}
+
+
+header ul{
+	list-style: none;
+}
+
+header nav#menu {
+	position: absolute;
+	bottom: 20%;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+#menu li {
+	display: inline-block;
+	font-weight: normal;
+	animation-delay: 1s;
+	animation-duration: 1s;
+}
+
+#menu li a{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	width: 140px;
+	color: #fff;
+	padding-bottom: 7px;
+	border-bottom: 2px solid transparent;
+	/* /* transition-delay: 0.5s; */
+	transition: 0.5s; 
+	cursor: pointer;
+}
+
+#menu li a:hover{
+	font-size: 20px;
+	border-bottom: 2px solid #fff ;
+}
+
+/* container */
+
+div#container{
+  display: inline-block;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* contents */
+div#contents{
+	padding: 50px 3%;
+}
+
+
+  h2{
+	/* display: block; */
+	font-size: 20px;
+	color: #fff;
+	background-color: #EA96A3;
+	/* margin: 100px auto 20px auto; */
+  text-align: center;
+	line-height: 30px;
+	padding: 0 20px;
+	border-radius: 100px;
+	letter-spacing: 0.1em;
+}
+
+
+#first dl{
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
+
+#notice{
+	display: flex;
+}
+
+#first dl dt{
+	display: inline-block;
+}
+
+#first dl dd{
+	justify-content: flex-start;
+
+}
+
+
+
+/* second */
+div#second h3{
+	font-size: 30px;
+	color: #968A7B;
+	background-color: #FFFFFF;
+	margin: 100px auto 50px auto;
+  text-align: center;
+	line-height: 30px;
+	padding: 20px 0;
+	border-radius: 20px;
+	border: 4px solid #EA96A3; 
+	margin:40px auto;
+}
+
+
+/* table */
+
+table{
+	border-collapse: collapse;
+}
+
+div#second thead tr th{
+	font-size: 30px;
+	color: #776854;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	text-align:center;
+	background-color: #EAE9E5;
+
+}
+
+.tab1{
+	border: 1px solid #999;
+  padding: 10px;
+	width: 100%;
+	margin: 0 auto 20px;
+	table-layout: fixed;
+}
+
+
+div#second tbody .name{
+	font-size: 25px;
+	color: #776854;
+	font-weight: bold;
+	padding-top:40px;
+	padding-bottom: 40px;
+	background-color: #FFFFFF;
+}
+
+div#second tbody .name_d{
+	font-size: 25px;
+	padding-top:40px;
+	padding-bottom: 40px;
+	background-color: #FFFFFF;
+}
+
+/* third */
+ .service{
+	 width: 100%;
+	 height: 455px;
+	 display: flex;
+	 border-top: 1px solid #ccc;
+	 border-bottom: 1px solid #ccc;
+ }
+
+ .service #post .image{
+	 width: 370px;
+	 height: 370px;
+	 margin: 30px 60px 30px 30px;
+ }
+
+ .image_head .list1{
+  font-size: 30px;
+ }
+
+ .image_head .list2{
+	 font-size: 20px;
+	 margin-left: 60px;
+ }
+
+
+
+
+
+
+
+/* sm */
+@media (max-width: 750px){
+	header nav#menu {
+		position: absolute;
+		bottom: 20%;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+
+
+@media (max-width: 850px) and (min-width: 751px){
+	header #logo img{
+		display: block;
+		width: 30%;
+		position: absolute;
+		top: 7%;
+		left: 35%;
+		bottom: 60%;
+	}
+}
+
+/* @media(min-width: 992px){
+	header #logo img{
+		display: block;
+		width: 30%;
+		position: absolute;
+		top: 7%;
+		left: 35%;
+		bottom: 60%;
+	}
+
+}
+
+@media(min-width: 1200px){
+	header #logo img{
+		display: block;
+		width: 30%;
+		position: absolute;
+		top: 7%;
+		left: 35%;
+		bottom: 60%;
+	}
+
+}
+
+@media(min-width: 1400px){
+	header #logo img{
+		display: block;
+		width: 15%;
+		position: absolute;
+		top: 30%;
+		left: 40%;
+		bottom: 50%;
+	}
+	
+
+} */
